@@ -1,0 +1,10 @@
+FileReader and BufferedReader are both classes in Java that can be used to read character data from a file
+, but there are some key differences between them.
+
+FileReader is a class that reads character data from a file one character at a time. It is not buffered, which means that every time you read a character from the stream, it will access the file and read one character. This can be slow, especially if you are reading a large file or if you are reading small amounts of data frequently.
+
+BufferedReader is a class that provides buffering for a FileReader. It reads data from a file in larger chunks (a buffer), and stores the data in memory. This allows for faster reading of data from the file because the application doesn't have to access the disk as frequently. When you call the read() method on a BufferedReader, it will read data from the buffer first, and only access the file when the buffer is empty.
+
+In addition to buffering, BufferedReader provides additional methods for reading character data, such as readLine(), which can be used to read an entire line of text from a file at once. FileReader only provides a method to read a single character at a time.
+
+In summary, the key difference between FileReader and BufferedReader is that FileReader reads character data from a file one character at a time, while BufferedReader reads data from a file in larger chunks and stores the data in memory for faster access. BufferedReader is generally faster than FileReader, but it requires more memory because it buffers the data. If you need to read small amounts of character data frequently, FileReader might be the better choice, but if you need to read large amounts of character data or read data less frequently, BufferedReader is likely to be more efficient.

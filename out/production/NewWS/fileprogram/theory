@@ -1,0 +1,10 @@
+File: The java.io.File class provides methods for working with files and directories. It can be used to create new files, delete existing files, check if a file exists, and retrieve information about a file or directory.
+
+FileInputStream and FileOutputStream: The java.io.FileInputStream and java.io.FileOutputStream classes can be used to read from and write to files, respectively. They are byte-oriented streams and are typically used for reading and writing binary data.
+BufferedInputStream and BufferedOutputStream: The java.io.BufferedInputStream and java.io.BufferedOutputStream classes can be used to provide buffering for byte-oriented input and output streams, which can improve performance.
+FileReader and FileWriter: The java.io.FileReader and java.io.FileWriter classes can be used to read from and write to files, respectively. They are character-oriented streams and are typically used for reading and writing text data.
+BufferedReader and BufferedWriter: The java.io.BufferedReader and java.io.BufferedWriter classes can be used to provide buffering for character-oriented input and output streams, which can improve performance.
+
+DataInputStream and DataOutputStream: The java.io.DataInputStream and java.io.DataOutputStream classes can be used to read and write primitive data types from and to binary files.
+
+ObjectInputStream and ObjectOutputStream: The java.io.ObjectInputStream and java.io.ObjectOutputStream classes can be used to read and write objects to and from binary files.
